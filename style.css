@@ -1,0 +1,29 @@
+.contentDisplaceGrid{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+    grid-template-areas:
+    "menuSideBar headerMenuBar headerMenuBar headerMenuBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+    "menuSideBar mainContent mainContent contentSideBar"
+}
+.headerMenuBar{
+    grid-area: headerMenuBar;
+}
+.menuSideBar{
+    grid-area: menuSideBar;
+    background-color: purple;
+}
+.mainContent{
+    grid-area: mainContent;
+    background-color: rgb(206, 54, 117);
+}
+.contentSideBar{
+    grid-area: contentSideBar;
+    background-color: cornflowerblue;
+}
