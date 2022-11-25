@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="headerMenuBar.css">
+    <link rel="stylesheet" href="./Style/reset.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/headerMenuBar.css">
+    <link rel="stylesheet" href="./Style/menuSideBar.css">
+    <link rel="stylesheet" href="mainContent.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,10 +17,10 @@
         
         <header class="headerMenuBar">
             <div class="headerSearchIcon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i for="headerInputSearch" class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="headerInput">
-                <input type="search" name="" id="">
+                <input type="search" name="" id="headerInputSearch" class="headerInputSearch">
             </div>
             <div class="headerBellIcon">
                 <i class="fa-regular fa-bell"></i>
@@ -40,18 +42,70 @@
                 </div>
             </div>
             <div class="headerButtonNew">
-                <button class="blueButton">New</button>
+                <button class="greenButton">New</button>
             </div>
             <div class="headerButtonUpload">
-                <button class="blueButton">Upload</button>
+                <button class="greenButton">Upload</button>
             </div>
             <div class="headerButtonShare">
-                <button class="blueButton">Share</button>
+                <button class="greenButton">Share</button>
             </div>
         </header>
 
-        <nav class="menuSideBar">b</nav>
-        <main class="mainContent">c</main>
+        <nav class="menuSideBar">
+            <div class="sideBarTitle displayFlex">
+                <i class="fa-solid fa-shield-dog"></i>
+                <h1>Dashboard</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="sideBarHome displayFlex">
+                <i class="fa-solid fa-house-user"></i>
+                <h4>Home</h4>
+            </div>
+            <div class="sideBarProfile displayFlex">
+                <i class="fa-solid fa-address-card"></i>
+                <h4>Profile</h4>
+            </div>
+            <div class="sideBarMessages displayFlex">
+                <i class="fa-solid fa-inbox"></i>
+                <h4>Messages</h4>
+            </div>
+            <div class="sideBarHistory displayFlex">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h4>History</h4>
+            </div>
+            <div class="sideBarTasks displayFlex">
+                <i class="fa-solid fa-list-check"></i>
+                <h4>Tasks</h4>
+            </div>
+            <div class="sideBarCommunities displayFlex">
+                <i class="fa-solid fa-people-group"></i>
+                <h4>communities</h4>
+            </div>
+            <br>
+            <br>
+            <div class="sideBarSettings displayFlex">
+                <i class="fa-solid fa-gears"></i>
+                <h4>Settings</h4>
+            </div>
+            <div class="sideBarSupport displayFlex">
+                <i class="fa-solid fa-circle-question"></i>
+                <h4>Support</h4>
+            </div>
+            <div class="sideBarPrivacy displayFlex">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>privacy</h4>
+            </div>
+        </nav>
+
+        <main class="mainContent">
+            
+
+
+
+        </main>
         <main class="contentSideBar">d</main>
     </div>
 </body>

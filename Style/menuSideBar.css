@@ -1,0 +1,28 @@
+.menuSideBar{
+    display: flex;
+    flex-direction: column;
+}
+.menuSideBar .displayFlex{
+    display: flex;
+}
+.displayFlex:hover{
+    background-color: #131426;
+    color: #16F28B;
+}
+.menuSideBar .sideBarTitle h1{
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.displayFlex i{
+    margin: 15px 20px 15px 30px;
+    font-size: 20px;
+}
+.displayFlex h4{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.menuSideBar .sideBarTitle i{
+    font-size: 38px;
+}
