@@ -1,4 +1,87 @@
 .mainContent{
+    padding: 15px 20px 10px 20px;
+    box-sizing: border-box;
+    gap: 5px;
     display: grid;
-    grid-template:repeat(5, 1fr) / repeat(6, 1fr);
+    width: 98%;
+    height: 98%;
+    grid-template: 30px repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas:
+    "projectTitle projectTitle"
+    "aCardContent1 aCardContent2"
+    "aCardContent3 aCardContent4"
+    "aCardContent5 aCardContent6";
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.projectTitle{
+    grid-area: projectTitle;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.cardSpace{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px 10px;
+    box-shadow: 2px 2px 10px -6px;
+}
+.cardDetail{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    left: -9%;
+    top: -4%;
+    width: 10px;
+    height: 108%;
+    background-color: #16F28B ;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 96%;
+    width: 100%;
+}
+.cardIcons i{
+    margin-left: 12px;
+    font-size: 12px;
+    filter: opacity(80%);
+}
+.cardIcons i:hover{
+    filter: opacity(100%);
+    cursor: pointer;
+}
+.card .cardIcons{
+    position:relative;
+    left: 75%;
+    top: 93%;
+}
+.card h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    filter: opacity(80%);
+}
+.cardContent1{
+    grid-area: aCardContent1;
+}
+.cardContent2{
+    grid-area: aCardContent2;
+}
+.cardContent3{
+    grid-area: aCardContent3;
+}
+.cardContent4{
+    grid-area: aCardContent4;
+}
+.cardContent5{
+    grid-area: aCardContent5;
+}
+.cardContent6{
+    grid-area: aCardContent6;
 }
