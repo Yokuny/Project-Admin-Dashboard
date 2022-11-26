@@ -7,7 +7,9 @@
 }
 .displayFlex:hover{
     background-color: #131426;
-    color: #16F28B;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
 }
 .menuSideBar .sideBarTitle h1{
     margin-top: 20px;
