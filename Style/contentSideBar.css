@@ -1,15 +1,73 @@
 .contentSideBar{
+    box-sizing: border-box;
+    padding: 15px 30px 10px 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    margin-right: 20px;
     display: grid;
-    grid-template-rows: 30px 1fr;
-    grid-template-areas: "sideBarTitle"
+    grid-template-rows: 30px 1fr 30px 1fr;
+    grid-template-areas:
+    "announcementTitle" 
+    "announcementContent"
+    "trendingTitle"
+    "trendingContent";
+    gap: 5px;
 }
-.sideBarTitle{
-    grid-area: sideBarTitle;
+.sideCardSize{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: white;
+    border-radius: 10px;
+    height: 98%;
+    box-shadow: 2px 2px 10px -6px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.announcementTitle{
+    grid-area: announcementTitle;
     font-size: 16px;
     font-weight: 600;
     margin-left: 15px;
-    
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-right: 20px;
 }
+.announcementContent{
+    grid-area: announcementContent;
+}
+.trendingTitle{
+    grid-area: trendingTitle;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.trendingContent{
+    grid-area: trendingContent;
+}
+.sideCardSize h4{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.sideCardSize p{
+    font-size: 14px;
+    font-weight: 400;
+    filter: opacity(80%);
+}
+hr{
+    opacity: 0.2;
+    width: 70%;
+}
+/*    end of announcement      */
+.trendingDisplace{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.trendingDisplace i{
+    font-size: 28px;
+    margin-right: 10px;
+    width: 36px;
+}
+
+

@@ -3,7 +3,6 @@
     padding: 15px 30px 10px 20px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    gap: 5px;
     height: 100%;
     display: grid;
     grid-template: 30px repeat(3, 1fr) / repeat(2, 1fr);
@@ -12,12 +11,7 @@
     "aCardContent1 aCardContent2"
     "aCardContent3 aCardContent4"
     "aCardContent5 aCardContent6";
-}
-.projectTitle{
-    grid-area: projectTitle;
-    font-size: 16px;
-    font-weight: 600;
-    margin-left: 15px;
+    gap: 5px;
 }
 .cardSpace{
     display: flex;
@@ -28,6 +22,12 @@
     margin-bottom: 5px;
     box-shadow: 2px 2px 10px -6px;
 }
+.projectTitle{
+    grid-area: projectTitle;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 15px;
+}
 .cardDetail{
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
@@ -36,10 +36,10 @@
     top: -4.6%;
     width: 10px;
     height: 109%;
-    background-color:#168C61;
+    background-color: #16F28B;
 }
 .cardDetail:hover{
-    background-color: #16F28B;
+    filter: brightness(120%);
 }
 .card{
     display: flex;
@@ -63,7 +63,7 @@
     top: 93%;
 }
 .card h4{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 .card p{
