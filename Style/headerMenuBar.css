@@ -16,6 +16,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    cursor: pointer;
 }
 .headerSearchIcon i{
     margin-right: 10px;

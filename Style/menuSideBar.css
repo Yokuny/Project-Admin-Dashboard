@@ -6,9 +6,9 @@
     display: flex;
 }
 .displayFlex:hover{
-    background-color: #131426;
+    background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 8px;
     cursor: pointer;
 }
 .menuSideBar .sideBarTitle h1{
